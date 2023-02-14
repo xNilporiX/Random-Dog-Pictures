@@ -1,0 +1,7 @@
+{
+  "name": "RandomDogImages",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
