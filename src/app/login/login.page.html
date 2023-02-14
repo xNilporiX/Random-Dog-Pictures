@@ -1,0 +1,21 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <ion-card class="loginPage">
+    <ion-card-content>
+      <form [formGroup]="form" (keyup.enter)="login()">
+        <ion-item>
+          <ion-label>Email</ion-label>
+          <ion-input type="text" formControlName="email" autofocus="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Password</ion-label>
+          <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+      </form>
+    </ion-card-content>
+  </ion-card>
+  <ion-button [disabled]="form.invalid" class="loginBtn" (click)="login()" [routerLink]="['/tabs']">Login</ion-button>
+</ion-content>
